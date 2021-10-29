@@ -59,7 +59,6 @@
           <hr>
           <p class="mb-0">Please wait for the result at the the end <strong>Best of Lunk !</strong></p>
         </div>
-
         </div>
          <!-- Displaying question at a interval of 10 seconds for each questions . -->
         <span v-else>

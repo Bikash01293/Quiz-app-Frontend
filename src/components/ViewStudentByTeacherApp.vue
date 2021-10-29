@@ -5,6 +5,21 @@
 
     <div class="table-responsive">
       <div class="container">
+        <div class="alert alert-warning" role="alert">
+          <h4 class="alert-heading">Instructions</h4>
+          <p><ul>
+            <li>
+              The tick in green colour means the student is unblocked make sure if you click on the green tick box the student will be blocked and its state would be changed.
+            </li>
+            <li>
+              Simillary the cross in red color means the student is blocked if you want to unblock the student click on red cross  the circle.
+            </li>
+          </ul></p>
+          <hr>
+          <p class="mb-0">Please go a head to make changes if you wish <strong>Thank you !</strong></p>
+        </div>
+        <br />
+        <br />
         <table class="table table-hover">
           <thead>
             <tr>
