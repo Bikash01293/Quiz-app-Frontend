@@ -1,6 +1,7 @@
 <template>
   <div>
     <TeacherNavbar />
+    <!-- Teacher can see questions over here -->
     <div class="container" v-for="question in questions" :key="question._id">
       <div class="box" v-for="(q, index) in question" :key="q._id">
         Question{{ index + 1 }}: {{ q.questionText }}<br /><br />

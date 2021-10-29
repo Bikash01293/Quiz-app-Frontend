@@ -4,6 +4,7 @@
 
     <div class="table-responsive">
       <div class="container">
+        <!-- This table shows the teacher to see, create and delete quizes altough they can add, view, and delete questions. -->
         <table class="table table-hover">
           <thead>
             <tr>

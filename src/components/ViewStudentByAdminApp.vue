@@ -1,7 +1,7 @@
 <template>
   <div>
     <AdminNavbar />
-
+    <!-- Admin can block and ublock students for any mischevious activities if found. -->
     <div class="table-responsive" v-if="isAuthenticated">
       <div class="container">
         <table class="table table-hover">

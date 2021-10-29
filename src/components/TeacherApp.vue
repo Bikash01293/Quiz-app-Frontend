@@ -14,6 +14,7 @@
               <th scope="col">Delete</th>
             </tr>
           </thead>
+          <!-- Table to display all the quizes to the teacher where quizes and questions can be seen, created, and deleted. Teacher can also see the students and if any issue they can be blocked and unblocked. -->
           <tbody v-for="quizz in quizzes" :key="quizz._id">
             <tr v-for="(q, index) in quizz" :key="q._id">
               <th scope="row">{{ index + 1 }}</th>

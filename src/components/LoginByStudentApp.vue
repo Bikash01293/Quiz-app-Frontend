@@ -20,6 +20,8 @@
         <h3>Student Login</h3>
         <br />
         <br />
+        <!-- Form details should be taken to send the details inorder to login student -->
+
         <form @submit.prevent="loginStudent">
           <input
             type="text"

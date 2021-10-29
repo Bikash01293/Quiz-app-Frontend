@@ -11,6 +11,7 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-between" id="nav">
+        <!-- Adding router link for Students, Teachers, Admin -->
         <div class="navbar-nav mr-auto">
           <router-link
             class="nav-link text-light font-weight-bold px-3"

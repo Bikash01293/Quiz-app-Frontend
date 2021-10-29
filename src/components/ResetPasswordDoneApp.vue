@@ -20,6 +20,7 @@
         <h3>Please Enter email to reset Password</h3>
         <br />
         <br />
+        <!-- Form details is shared for reseting the password  -->
         <form @submit.prevent>
           <input
             type="text"

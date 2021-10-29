@@ -4,6 +4,7 @@
 
     <div class="table-responsive" v-if="isAuthenticated">
       <div class="container">
+        <!-- Displaying all the quiz to play -->
         <table class="table table-hover">
           <thead>
             <tr>
@@ -28,11 +29,13 @@
             </tr>
           </tbody>
         </table>
+        <!-- Used appspinner if the question is not loaded -->
         <AppSpinner
             v-if="status === 'LOADING'"
             size="large"
             theme="primary"
           />
+          <!-- Further the alert will be shown if there is some error in loading quiz -->
           <AppAlert v-else-if="status === 'ERROR'" theme="danger">
             <template v-slot:heading>
               <span>Error</span>

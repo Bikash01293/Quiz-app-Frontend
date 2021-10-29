@@ -3,6 +3,7 @@
     <TeacherNavbar />
 
     <div class="container">
+      <!-- Form is being created to add the quiz details -->
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-form-group id="input-group-2" label="Quiz name:" label-for="input-2">
           <b-form-input
@@ -32,8 +33,6 @@
             id="checkboxes-4"
             :aria-describedby="ariaDescribedby"
           >
-            <!-- <b-form-checkbox value="me">Check me out</b-form-checkbox>
-                <b-form-checkbox value="that">Check that out</b-form-checkbox> -->
           </b-form-checkbox-group>
         </b-form-group>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <AdminNavbar />
-
+    <!-- Admin can make teacher inactive if the teacher is not present or active if present. -->
     <div class="table-responsive" v-if="isAuthenticated">
       <div class="container">
         <table class="table table-hover">
@@ -13,8 +13,6 @@
               <th scope="col">State</th>
             </tr>
           </thead>
-          
-          
           <tbody v-for="teacher in teachers" :key="teacher._id">
             <tr v-for="(t, index) in teacher" :key="t._id">
               <th scope="row">{{ index + 1 }}</th>

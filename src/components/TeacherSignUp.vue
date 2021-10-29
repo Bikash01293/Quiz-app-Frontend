@@ -20,6 +20,7 @@
         <h3>Teacher SignUp</h3>
         <br />
         <br />
+        <!-- Form details is shared for adding up the teachers details. -->
         <form @submit.prevent="registerTeacher">
           <input
             type="text"

@@ -1,8 +1,9 @@
 <template>
   <div>
     <TeacherNavbar />
-
+    
     <div class="container">
+      <!-- This is a form to add the question details -->
       <form @submit.prevent="formSubmit()">
         <div class="form-group">
           <label for="questionText">Question Text </label>
@@ -79,7 +80,6 @@
             required
           />
         </div>
-
         <button
           type="submit"
           class="btn btn-primary"
@@ -88,7 +88,6 @@
           Submit
         </button>
       </form>
-      <!-- <p class="social-text" style="color: red;font-weight: bold;font-size: 20px;">{{msg}}</p> -->
     </div>
   </div>
 </template>
@@ -108,14 +107,11 @@ export default {
         options: [],
         answer: "",
         quizid: "",
-        // quizid: '616bfd1e17c599bde9c7530f'
       },
     };
   },
-  // props: {
-  //     quizid: String
-  // },
   methods: {
+    //formSubmit is a method to submit the form details and calls the submitForm in the teacher.js file 
     async formSubmit() {
       this.quizId = this.$route.params.quizids;
       const q = this.quizId;

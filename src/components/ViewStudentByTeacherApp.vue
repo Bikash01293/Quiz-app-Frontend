@@ -1,6 +1,7 @@
 <template>
   <div>
     <TeacherNavbar />
+    <!-- Teacher can block and ublock students for any mischevious activities  -->
 
     <div class="table-responsive">
       <div class="container">

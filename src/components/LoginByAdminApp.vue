@@ -20,6 +20,7 @@
         <h3>Admin Login</h3>
         <br />
         <br />
+        <!-- Form details should be taken to send the details inorder to login admin -->
         <form @submit.prevent="loginAdmin">
           <input
             type="text"
@@ -76,14 +77,6 @@ export default {
   name: "LoginByAdminApp",
   components: {
     NavbarHomeApp,
-  },
-  computed: {
-    role() {
-      return this.$store.state.auth.role;
-    },
-    isAuthenticated() {
-      return this.$store.getters.isAuthenticated;
-    },
   },
   data() {
     return {

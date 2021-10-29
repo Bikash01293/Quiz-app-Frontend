@@ -20,6 +20,7 @@
         <h3>Please Enter email to reset Password</h3>
         <br />
         <br />
+        <!-- Form is used to send the details of the student's, teacher's, admin's for reseting password -->
         <form @submit.prevent="forgotPassword">
           <input
             type="text"

@@ -1,12 +1,10 @@
 <template>
   <div>
     <StudentNavbar />
-
+   
     <div class="d-flex justify-content-center container">
+      <!-- If the show score is true then displaying the result of the quiz attended by the attendee. -->
       <div v-if="showScore">
-        <!-- <b-card title="Results" style="max-width: 20rem">
-          You Scored {{ score }} of {{ questions.length }}
-        </b-card> -->
         <div class="modal">
             <button @click="showModal = true" class="button">Show Results</button>
             <transition name="fade" appear>
@@ -30,9 +28,10 @@
             </transition>
           </div>
       </div>
+      <!-- If the showScore is false then displaying the button to play quiz. -->
       <div class="card-q" v-else>
+        <!--If the startQuiz is not false i.e true then displaying the instructions and button to start the quiz. -->
         <div v-if="!startQuiz">
-
         <span >
           <b-card
             img-src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -62,6 +61,7 @@
         </div>
 
         </div>
+         <!-- Displaying question at a interval of 10 seconds for each questions . -->
         <span v-else>
           <b-card
             title="Simple Quiz Application"

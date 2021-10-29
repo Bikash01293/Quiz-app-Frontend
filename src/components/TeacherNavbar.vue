@@ -11,6 +11,7 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-between" id="nav">
+        <!-- Adding router link for Home, CreateQuiz, UploadQuiz and view Students -->
         <div class="navbar-nav mr-auto" v-if="isAuthenticated">
           <router-link
             class="nav-link text-light font-weight-bold px-3"
@@ -32,12 +33,9 @@
           <router-link
             class="nav-link text-light font-weight-bold px-3"
             :to="{ name: 'ViewStudentByTeacherApp' }"
-            >VIEW STUDENTS</router-link
+            >STUDENTS</router-link
           >
         </div>
-
-        <router-view />
-
         <router-link
         v-if="isAuthenticated"
           @click="logout()"
@@ -45,6 +43,7 @@
           to="/login/teacher"
           >LOGOUT</router-link
         >
+        <!-- If the user is not Authenticated then this router link will appear -->
         <router-link
           v-if="!isAuthenticated"
           class="nav-link text-light font-weight-bold px-3"
@@ -52,6 +51,7 @@
           >LOGIN</router-link
         >
       </div>
+      <router-view />
     </nav>
 
     <!-- <transition name="moveInUp">
@@ -64,11 +64,13 @@
 export default {
   name: "TeacherNavbar",
   computed: {
+    // we are isAuthenticated getting the state from the store to restrict the router link
     isAuthenticated() {
       return this.$store.getters.isAuthenticated;
     },
   },
   methods: {
+    // logout method is dispathed to the action of the store to remove the data from the local storage
     logout() {
       this.$store
         .dispatch("logout")
