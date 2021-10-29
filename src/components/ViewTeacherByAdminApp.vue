@@ -64,7 +64,11 @@
           </AppAlert>
       </div>
     </div>
-    
+    <div v-else class="container">
+        <div class="alert alert-warning" role="alert">
+          <strong>This is a warning please—check your email or password is correct or not and click on login to relogin!</strong>
+        </div>
+    </div>
   </div>
 </template>
 
