@@ -39,7 +39,7 @@
               <td v-if="s.blocked === true">
                 <button
                   class="button"
-                  @click="unblock(s._id), makeToastUnBlock('success')"
+                  @click="unblock(s._id), makeToastUnblock('success')"
                 >
                   <b-icon
                     icon="x-circle"
