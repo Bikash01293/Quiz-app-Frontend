@@ -123,30 +123,7 @@ const router = new Router({
     ]
 });
 
-// router.beforeEach(( to, from, next ) => {
-//     if( to.name !== 'ViewTeacherByAdminApp' && !stores.getters.isAuthenticated ) {
-//         return next({
-//             name: 'LoginByAdminApp'
-//         });
-//     }else if(to.name=='ViewStudentByAdminApp' && !stores.getters.isAuthenticated){
-//         return next({
-//             name: 'LoginByAdminApp'
-//         });
-//     }else if(to.name=='TeacherApp' && !stores.getters.isAuthenticated){
-//         return next({
-//             name: 'LoginByTeacherApp'
-//         });
-//     }else if(to.name=='UploadQuizApp' && !stores.getters.isAuthenticated){
-//         return next({
-//             name: 'LoginByTeacherApp'
-//         });
-//     }else if(to.name=='StudentApp' && !stores.getters.isAuthenticated){
-//         return next({
-//             name: 'LoginByStudentApp'
-//         });
-//     }
-//     next();
-// });
+
 
 
 
