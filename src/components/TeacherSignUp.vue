@@ -17,7 +17,7 @@
         img-right
       >
         <br /><br />
-        <h3>Teacher SignUp</h3>
+        <h3><strong>Teacher SignUp</strong></h3>
         <br />
         <br />
         <!-- Form details is shared for adding up the teachers details. -->

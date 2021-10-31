@@ -17,7 +17,7 @@
         img-right
       >
         <br /><br />
-        <h3>Admin SignUp</h3>
+        <h3><strong>Admin SignUp</strong></h3>
         <br />
         <br />
         <form @submit.prevent="registerAdmin">

@@ -17,7 +17,7 @@
         img-right
       >
         <br /><br />
-        <h3>Admin Login</h3>
+        <h3><strong>Admin Login</strong></h3>
         <br />
         <br />
         <!-- Form details should be taken to send the details inorder to login admin -->

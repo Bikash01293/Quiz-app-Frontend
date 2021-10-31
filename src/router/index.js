@@ -1,9 +1,5 @@
 import Router from 'vue-router';
-
-// import stores from '@/stores'
-
-
-
+// import store from '@/stores'
 
 import LoginByAdminApp from '@/components/LoginByAdminApp'
 import LoginByTeacherApp from '@/components/LoginByTeacherApp'
@@ -23,9 +19,6 @@ import TeacherSignUp from '@/components/TeacherSignUp'
 import StudentSignUp from '@/components/StudentSignUp'
 import ForgotPasswordApp from '@/components/ForgotPasswordApp'
 import ResetPasswordDoneApp from '@/components/ResetPasswordDoneApp'
-// import PageNotFoundApp from '@/components/PageNotFoundApp'
-
-
 
 
 const router = new Router({
@@ -126,11 +119,6 @@ const router = new Router({
             path: '/resetpassworddone',
             component: ResetPasswordDoneApp
         },
-        // {
-        //     name: 'PageNotFoundApp',
-        //     path: '*',
-        //     component: PageNotFoundApp
-        // }
 
     ]
 });
@@ -155,6 +143,27 @@ const router = new Router({
 //     }else if(to.name=='StudentApp' && !stores.getters.isAuthenticated){
 //         return next({
 //             name: 'LoginByStudentApp'
+//         });
+//     }
+//     next();
+// });
+
+
+
+
+// router.beforeEach(( to, from, next ) => {
+//     if( to.name !== 'LoginByAdminApp' && !store.getters.isAuthenticated ) {
+//         return next({
+//             name: 'LoginByAdminApp'
+//         });
+//     }else if( to.name !== 'LoginByStudentApp' && !store.getters.isAuthenticated ) {
+//         return next({
+//             name: 'LoginByStudentApp'
+//         });
+//     }
+//     else if( to.name !== 'LoginByTeacherApp' && !store.getters.isAuthenticated ) {
+//         return next({
+//             name: 'LoginByTeacherApp'
 //         });
 //     }
 //     next();

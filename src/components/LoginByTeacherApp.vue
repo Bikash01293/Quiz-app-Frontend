@@ -17,7 +17,7 @@
         img-right
       >
         <br /><br />
-        <h3>Teacher Login</h3>
+        <h3><strong>Teacher Login</strong></h3>
         <br />
         <br />
         <!-- Form details should be taken to send the details inorder to login teacher -->
