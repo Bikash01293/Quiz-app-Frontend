@@ -141,7 +141,8 @@ const quizUpload = async (quizId) => {
             quizId
         },
         headers: {
-            'Authorization': apiToken
+            'Authorization': apiToken,
+            'Content-Type': 'application/json'
         }
     })
     return response.data;
