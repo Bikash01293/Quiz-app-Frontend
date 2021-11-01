@@ -155,6 +155,7 @@ export default {
       const questionData = await getAllQuestionsByQuizId(quizId);
       // console.log(questionData.questions)
       this.questions = questionData.questions;
+      // console.log(this.questions.length)
       if (this.questions.length >= 5) {
         await quizUpload(quizId);
         this.makeToastUpload("success");

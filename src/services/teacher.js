@@ -135,11 +135,10 @@ const getAllQuestions = async (quizId) => {
     return response.data;
 };
 
-const quizUpload = async (quizId) => {
-    const response = await axios.post( `${apiBaseUrl}/teacher/uploadquiz`,{
-        params: {
-            quizId
-        },
+const quizUpload = async (id) => {
+    const response = await axios.post( `${apiBaseUrl}/teacher/uploadquiz`,{id},{
+        
+       
         headers: {
             'Authorization': apiToken,
             'Content-Type': 'application/json'
