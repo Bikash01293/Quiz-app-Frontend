@@ -1,6 +1,6 @@
 const AppConfig = {
     
-    apiBaseUrl: 'https://quiz-app-backnd.herokuapp.com/api',
+    apiBaseUrl: 'http://localhost:3000/api',
 }
 
 export default AppConfig;

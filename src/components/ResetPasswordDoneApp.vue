@@ -113,7 +113,7 @@ export default {
       }
     },
     makeToast(variant = null) {
-      this.$bvToast.toast("Please Check your email for password !", {
+      this.$bvToast.toast("Please go to the login page !", {
         title: `${variant || "default"}`,
         variant: variant,
         solid: true,
