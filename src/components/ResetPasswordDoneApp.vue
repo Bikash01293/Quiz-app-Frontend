@@ -44,7 +44,7 @@
           <br />
           <br />
           <input
-            type="text"
+            type="password"
             id="enterPassword"
             class="fadeIn third"
             name="enterPassword"
@@ -54,7 +54,7 @@
           <br />
           <br />
           <input
-            type="text"
+            type="password"
             id="renter"
             class="fadeIn third"
             name="renter"
@@ -327,9 +327,68 @@ input[type="text"]:placeholder {
   color: #cccccc;
 }
 
-/* ANIMATIONS */
+input[type="password"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+input[type="password"]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
 
-/* Simple CSS3 Fade-in-down Animation */
+input[type="password"]:placeholder {
+  color: #cccccc;
+}
+
+
+input[type="number"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+input[type="number"]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type="number"]:placeholder {
+  color: #cccccc;
+}
+
+
+
+
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -365,7 +424,7 @@ input[type="text"]:placeholder {
   }
 }
 
-/* Simple CSS3 Fade-in Animation */
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -430,7 +489,7 @@ input[type="text"]:placeholder {
   animation-delay: 1s;
 }
 
-/* Simple CSS3 Fade-in Animation */
+
 .underlineHover:after {
   display: block;
   left: 0;
@@ -450,7 +509,6 @@ input[type="text"]:placeholder {
   width: 100%;
 }
 
-/* OTHERS */
 
 *:focus {
   outline: none;
